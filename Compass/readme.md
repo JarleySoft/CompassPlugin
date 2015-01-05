@@ -4,7 +4,7 @@
 Provides and simple way to access the compass on Windows Phone, iOS and Android from you Xamarin.Forms projects
 
 ### Setup
-* Available on NuGet: http://www.nuget.org/packages/Xam.Plugin.Connectivity
+* Available on NuGet: https://github.com/JarleySoft/Xamarin.Plugins
 * Install into your PCL project and Client projects.
 
 **Supports Xamarin.Forms**
