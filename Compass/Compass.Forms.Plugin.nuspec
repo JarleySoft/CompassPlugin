@@ -4,8 +4,8 @@
        <id>JarleySoft.Compass.Forms.Plugin</id>
        <version>1.0.0.0</version>
        <title>Compass Plugin for Xamarin.Forms</title>
-       <authors>Your Name</authors>
-       <owners>Your Name</owners>
+       <authors>Jarley Software</authors>
+       <owners>Carl Barton</owners>
        <licenseUrl>https://github.com/JarleySoft/Xamarin.Plugins/blob/master/LICENSE</licenseUrl>
        <projectUrl>https://github.com/JarleySoft/Xamarin.Plugins</projectUrl>
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
