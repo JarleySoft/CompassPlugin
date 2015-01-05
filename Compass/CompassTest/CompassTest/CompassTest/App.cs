@@ -15,15 +15,15 @@ namespace CompassTest
 
         public App()
         {
+            Label label = new Label 
+            {
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+            };
 
             MainPage = new ContentPage
             {
-                Content = new Label
-                {
-                    Text = "Hello, Forms !",
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                },
+                Content = label
             };
 
             compass = DependencyService.Get<ICompass>();
@@ -31,6 +31,10 @@ namespace CompassTest
             compass.DirectionChanged += (sender, e) =>
             {
                 Debug.WriteLine("*** Compass Heading = {0}", e.Heading);
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    label.Text = String.Format("Heading = {0}", e.Heading.ToString());
+                });
             };
 
             compass.Start();
