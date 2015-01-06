@@ -25,7 +25,7 @@
     <ValidateXaml>true</ValidateXaml>
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
-    <NuGetPackageImportStamp>2e43c1a1</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>6668ae26</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -163,11 +163,11 @@
   <ItemGroup>
     <Reference Include="Compass.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.0\lib\wp8\Compass.Forms.Plugin.Abstractions.dll</HintPath>
+      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.1\lib\wp8\Compass.Forms.Plugin.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Compass.Forms.Plugin.WindowsPhone, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.0\lib\wp8\Compass.Forms.Plugin.WindowsPhone.dll</HintPath>
+      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.1\lib\wp8\Compass.Forms.Plugin.WindowsPhone.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

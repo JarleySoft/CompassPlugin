@@ -11,7 +11,7 @@
     <RootNamespace>CompassTest.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>FormsTemplateiOS</AssemblyName>
-    <NuGetPackageImportStamp>2517d3b8</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>f42bd493</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -91,11 +91,11 @@
   <ItemGroup>
     <Reference Include="Compass.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.0\lib\MonoTouch10\Compass.Forms.Plugin.Abstractions.dll</HintPath>
+      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.1\lib\MonoTouch10\Compass.Forms.Plugin.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Compass.Forms.Plugin.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.0\lib\MonoTouch10\Compass.Forms.Plugin.iOS.dll</HintPath>
+      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.1\lib\MonoTouch10\Compass.Forms.Plugin.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
