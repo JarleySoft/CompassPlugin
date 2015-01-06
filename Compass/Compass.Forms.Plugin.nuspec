@@ -2,12 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>JarleySoft.Compass.Forms.Plugin</id>
-       <version>1.0.0.1</version>
+       <version>1.0.0.2</version>
        <title>Compass Plugin for Xamarin.Forms</title>
        <authors>Jarley Software</authors>
        <owners>Carl Barton</owners>
        <licenseUrl>https://github.com/JarleySoft/Xamarin.Plugins/blob/master/LICENSE</licenseUrl>
        <projectUrl>https://github.com/JarleySoft/Xamarin.Plugins</projectUrl>
+       <iconUrl>http://www.jarleysoft.com/images/compass_plugin_icon.png</iconUrl>
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
          Compass Plugin for Xamarin.Forms
