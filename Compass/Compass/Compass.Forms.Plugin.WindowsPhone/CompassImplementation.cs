@@ -52,15 +52,15 @@ namespace Compass.Forms.Plugin.WindowsPhone
                         new EventHandler<SensorReadingEventArgs<CompassReading>>(compass_CurrentValueChanged);
                     compass.Calibrate +=
                         new EventHandler<CalibrationEventArgs>(compass_Calibrate);
+                }
 
-                    try
-                    {
-                        compass.Start();
-                    }
-                    catch (InvalidOperationException e)
-                    {
+                try
+                {
+                    compass.Start();
+                }
+                catch (InvalidOperationException e)
+                {
 
-                    }
                 }
             }
             else

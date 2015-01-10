@@ -28,23 +28,27 @@ namespace Compass.Forms.Plugin.iOS
 
         public void Start()
         {
-            _locationManager = new CLLocationManager();
-            _locationManager.DesiredAccuracy = CLLocation.AccuracyBest;
-            _locationManager.HeadingFilter = 1;
+            if (_locationManager == null)
+            {
+                _locationManager = new CLLocationManager();
+                _locationManager.DesiredAccuracy = CLLocation.AccuracyBest;
+                _locationManager.HeadingFilter = 1;
 
-            _locationManager.UpdatedHeading += (sender, e) =>
-                {
-                    double newRad = -e.NewHeading.TrueHeading;
+                _locationManager.UpdatedHeading += (sender, e) =>
+                    {
+                        double newRad = -e.NewHeading.TrueHeading;
 
-                    if (DirectionChanged != null)
-                        DirectionChanged(this, new CompassDataChangedEventArgs { Heading = e.NewHeading.TrueHeading });
-                };
+                        if (DirectionChanged != null)
+                            DirectionChanged(this, new CompassDataChangedEventArgs { Heading = e.NewHeading.TrueHeading });
+                    };
+            }
             _locationManager.StartUpdatingHeading();
         }
 
         public void Stop()
         {
-            _locationManager.StopUpdatingHeading();
+            if (_locationManager != null)
+                _locationManager.StopUpdatingHeading();
         }
     }
 }

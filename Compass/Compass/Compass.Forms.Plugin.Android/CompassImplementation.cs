@@ -40,18 +40,21 @@ namespace Compass.Forms.Plugin.Droid
 
             if (ctx != null)
             {
-                mSensorManager = (SensorManager)ctx.GetSystemService(Context.SensorService);
-                mSensor = mSensorManager.GetDefaultSensor(SensorType.Orientation);
+                if (mSensor == null)
+                {
+                    mSensorManager = (SensorManager)ctx.GetSystemService(Context.SensorService);
+                    mSensor = mSensorManager.GetDefaultSensor(SensorType.Orientation);
+                }
 
                 mSensorManager.RegisterListener(this, mSensor, SensorDelay.Fastest);
-
             }
 
         }
 
         public void Stop()
         {
-
+            if (mSensor != null)
+                mSensorManager.UnregisterListener(this);
         }
 
         public void OnAccuracyChanged(Sensor sensor, SensorStatus accuracy)

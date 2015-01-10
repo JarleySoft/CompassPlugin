@@ -15,17 +15,73 @@ namespace CompassTest
 
         public App()
         {
-            Label label = new Label 
+            var label = new Label 
             {
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
             };
 
-            MainPage = new ContentPage
+            var buttonStart = new Button
             {
-                Content = label
+                Text = "Start",
+                IsEnabled = true
             };
 
+            var buttonStop = new Button
+            {
+                Text = "Stop",
+                IsEnabled = false
+            };
+
+            buttonStart.Clicked += (sender, args) =>
+            {
+                if (compass == null)
+                {
+                    compass = DependencyService.Get<ICompass>();
+
+                    compass.DirectionChanged += (s, e) =>
+                    {
+                        Debug.WriteLine("*** Compass Heading = {0}", e.Heading);
+                        Device.BeginInvokeOnMainThread(() =>
+                        {
+                            label.Text = String.Format("Heeading = {0}", e.Heading.ToString());
+                        });
+                    };
+                }
+
+                compass.Start();
+
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    buttonStart.IsEnabled = false;
+                    buttonStop.IsEnabled = true;
+                });
+
+            };
+
+            buttonStop.Clicked += (sender, args) =>
+            {
+                if (compass != null)
+                {
+                    compass.Stop();
+
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        buttonStart.IsEnabled = true;
+                        buttonStop.IsEnabled = false;
+                    });
+                }
+
+            };
+
+            MainPage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    Children = { label, buttonStart, buttonStop }
+                }
+            };
+/*
             compass = DependencyService.Get<ICompass>();
 
             compass.DirectionChanged += (sender, e) =>
@@ -38,11 +94,7 @@ namespace CompassTest
             };
 
             compass.Start();
-        }
-
-        ~App()
-        {
-            compass.Stop();
+ */
         }
     }
 }

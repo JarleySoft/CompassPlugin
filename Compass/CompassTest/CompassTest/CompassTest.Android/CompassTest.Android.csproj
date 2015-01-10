@@ -24,7 +24,9 @@
     <JavaMaximumHeapSize />
     <JavaOptions />
     <AndroidUseLatestPlatformSdk />
-    <NuGetPackageImportStamp>492203a4</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>f948e404</NuGetPackageImportStamp>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,16 +50,15 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Compass.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Compass.Forms.Plugin.Abstractions, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.1\lib\MonoAndroid10\Compass.Forms.Plugin.Abstractions.dll</HintPath>
+      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.3\lib\MonoAndroid10\Compass.Forms.Plugin.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Compass.Forms.Plugin.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Compass.Forms.Plugin.Android, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.1\lib\MonoAndroid10\Compass.Forms.Plugin.Android.dll</HintPath>
+      <HintPath>..\..\packages\JarleySoft.Compass.Forms.Plugin.1.0.0.3\lib\MonoAndroid10\Compass.Forms.Plugin.Android.dll</HintPath>
     </Reference>
-    <Reference Include="FormsViewGroup, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="FormsViewGroup">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.0.6292\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
@@ -68,18 +69,15 @@
     <Reference Include="System.Xml" />
     <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Xamarin.Android.Support.v4.19.1.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Core, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Forms.Core">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.0.6292\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Platform.Android, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Forms.Platform.Android">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.0.6292\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Forms.Xaml, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.0.6292\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -105,13 +103,15 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <Import Project="..\..\packages\Xamarin.Forms.1.3.0.6292\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.0.6292\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
     <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.3.0.6292\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.3.0.6292\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets'))" />
   </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.1.3.0.6292\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.0.6292\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
