@@ -2,7 +2,11 @@
 using System;
 using Xamarin.Forms;
 using Compass.Forms.Plugin.iOS;
+#if __UNIFIED__
+using CoreLocation;
+#else
 using MonoTouch.CoreLocation;
+#endif
 
 [assembly: Dependency(typeof(CompassImplementation))]
 namespace Compass.Forms.Plugin.iOS
