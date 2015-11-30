@@ -1,6 +1,4 @@
 ## Compass Plugin
-
-## What is this?
 Provides and simple way to access the compass on iOS, Android, and Windows. Returns 0-360 degrees
 
 ### Setup
