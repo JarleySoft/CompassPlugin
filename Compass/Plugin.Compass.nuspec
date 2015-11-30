@@ -58,7 +58,7 @@
         <file src="Plugin.Compass.UWP\bin\Release\Plugin.Compass.xml" target="lib\UAP10\Plugin.Compass.xml" />
         <file src="Plugin.Compass.UWP\bin\Release\Plugin.Compass.pdb" target="lib\UAP10\Plugin.Compass.pdb" />
         <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\UAP10\Plugin.Compass.Abstractions.dll" />
-        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\UAP10S\Plugin.Compass.Abstractions.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\UAP10\Plugin.Compass.Abstractions.xml" />
         <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.pdb" target="lib\UAP10\Plugin.Compass.Abstractions.pdb" />
 
 
