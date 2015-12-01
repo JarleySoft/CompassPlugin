@@ -6,10 +6,11 @@ This is where I keep my public plugins for Xamarin.
 # Current Plugins for Xamarin
 
 Each plugin has a README with more information on what they contain.
-* **[Compass Heading - Xamarin.Forms](https://github.com/JarleySoft/Xamarin.Plugins/tree/master/Compass)**: Provides and simple way to access the compass on Windows Phone, iOS and Android from you Xamarin.Forms projects
+* **[Compass Heading](https://github.com/JarleySoft/Xamarin.Plugins/tree/master/Compass)**: Provides and simple way to access the compass on iOS, Android, and Windows.
 
 #### Contributors
 * [cbartonnh](https://github.com/JarleySoft)
+* [James Montemagno](https://github.com/jamesmontemagno)
 
 Thanks!
 

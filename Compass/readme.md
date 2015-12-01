@@ -1,40 +1,40 @@
-## Compass Plugin for Xamarin.Forms
-
-## What is this?
-Provides and simple way to access the compass on Windows Phone, iOS and Android from you Xamarin.Forms projects
+## Compass Plugin
+Provides and simple way to access the compass on iOS, Android, and Windows. Returns 0-360 degrees
 
 ### Setup
-* Available on NuGet: https://www.nuget.org/packages/JarleySoft.Compass.Forms.Plugin/
+* Available on NuGet: https://www.nuget.org/packages/Plugin.Compass
 * Install into your PCL project and Client projects.
 
-**Supports Xamarin.Forms**
+**Supports**
 * iOS
+* iOS Unified
 * Android
 * Windows Phone 8
+* Windows Phone 8.1 RT
+* Windows Store 8.1 RT
+* Universal Windows Apps
 
 ### API Usage
 
-You will need to call CompassImplementation.Init() after the call to Forms.Init() for each platform.
-
 **IsSupported**
-```
+```csharp
 /// <summary>
 /// Determine if Compass is available.
 /// </summary>
-bool IsSupported();
+bool IsSupported { get; }
 ```
-IsSupported() always returns true on Android and iOS currently. Windows Phone returns the true availability of the compass.
+
 
 **Start**
-```
+```csharp
 /// <summary>
-/// Plugin will begin firing DirectionChanged events as they are available
+/// Plugin will begin firing CompassChanged events as they are available
 /// </summary>
 void Start();
 ```
 
 **Stop**
-```
+```csharp
 /// <summary>
 /// Plugin will stop firing events
 /// </summary>
@@ -42,28 +42,39 @@ void Stop();
 ```
 
 **DirectionChanged Event**
-```
+```csharp
 /// <summary>
 /// Event fires when updates are available
 /// </summary>
-event EventHandler<CompassDataChangedEventArgs> DirectionChanged;
+event EventHandler<CompassChangedEventArgs> CompassChanged;
 ```
 
-**CompassDataChangedEventArgs**
-```
+**CompassChangedEventArgs**
+```csharp
 /// <summary>
-/// EventArgs included when DirectionChanged Event fires
+/// EventArgs included when CompassChanged Event fires (Returns 0-360 degrees)
 /// </summary>
-double Heading { get; set; }
+double Heading { get; }
 ```
 
-### Future Enhancements??
+### Usage
 
-* Integrate Calibration Form for Windows
-* Provide Access to raw data
+```csharp
+ 
+CrossCompass.Current.CompassChanged += (s, e) =>
+{
+    Debug.WriteLine("*** Compass Heading = {0}", e.Heading);
+    
+    label.Text = $"Heading = {e.Heading}";
+   
+};
+
+CrossCompass.Current.Start();
+```
 
 #### Contributors
 * [cbartonnh](https://github.com/JarleySoft)
+* [James Montemagno](https://github.com/jamesmontemagno)
 
 Thanks!
 

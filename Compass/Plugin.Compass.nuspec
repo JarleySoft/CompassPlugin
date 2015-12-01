@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="2.8.1">
+        <id>Plugin.Compass</id>
+        <version>2.0.0</version>
+        <title>Compass Plugin for Xamarin and Windows</title>
+        <authors>Jarley Software, James Montemagno</authors>
+        <owners>Carl Barton, James Montemagno</owners>
+        <licenseUrl>https://github.com/JarleySoft/Xamarin.Plugins/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/JarleySoft/Xamarin.Plugins</projectUrl>
+        <iconUrl>http://www.jarleysoft.com/images/compass_plugin_icon.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+            Compass Plugin for Xamarin and Windows
+        </description>
+        <summary>Provides a simple, common interface to get Compass Heading with Xamarin.iOS, Xamarin.Android, and Windows.</summary>
+        <tags>xamarin, pcl, xam.pcl, windows phone, winphone, wp8, android, xamarin.forms, ios, compass</tags>
+        <dependencies>
+        </dependencies>
+    </metadata>
+    <files>
+        <!--Core-->
+        <file src="Plugin.Compass\bin\Release\Plugin.Compass.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Compass.dll" />
+        <file src="Plugin.Compass\bin\Release\Plugin.Compass.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Compass.xml" />
+        <file src="Plugin.Compass\bin\Release\Plugin.Compass.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Compass.pdb" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Compass.Abstractions.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Compass.Abstractions.pdb" />
+
+        <!--Win Phone Silverlight-->
+        <file src="Plugin.Compass.WindowsPhone\bin\Release\Plugin.Compass.dll" target="lib\wp8\Plugin.Compass.dll" />
+        <file src="Plugin.Compass.WindowsPhone\bin\Release\Plugin.Compass.xml" target="lib\wp8\Plugin.Compass.xml" />
+        <file src="Plugin.Compass.WindowsPhone\bin\Release\Plugin.Compass.pdb" target="lib\wp8\Plugin.Compass.pdb" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\wp8\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\wp8\Plugin.Compass.Abstractions.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.pdb" target="lib\wp8\Plugin.Compass.Abstractions.pdb" />
+
+
+        <!--Win Phone RT-->
+        <file src="Plugin.Compass.WinRT\bin\Release\Plugin.Compass.dll" target="lib\wpa81\Plugin.Compass.dll" />
+        <file src="Plugin.Compass.WinRT\bin\Release\Plugin.Compass.xml" target="lib\wpa81\Plugin.Compass.xml" />
+        <file src="Plugin.Compass.WinRT\bin\Release\Plugin.Compass.pdb" target="lib\wpa81\Plugin.Compass.pdb" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\wpa81\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\wpa81\Plugin.Compass.Abstractions.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.pdb" target="lib\wpa81\Plugin.Compass.Abstractions.pdb" />
+
+
+        <!--Win Store RT-->
+        <file src="Plugin.Compass.WinRT\bin\Release\Plugin.Compass.dll" target="lib\win8\Plugin.Compass.dll" />
+        <file src="Plugin.Compass.WinRT\bin\Release\Plugin.Compass.xml" target="lib\win8\Plugin.Compass.xml" />
+        <file src="Plugin.Compass.WinRT\bin\Release\Plugin.Compass.pdb" target="lib\win8\Plugin.Compass.pdb" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\win8\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\win8\Plugin.Compass.Abstractions.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.pdb" target="lib\win8\Plugin.Compass.Abstractions.pdb" />
+
+        <!--UWP-->
+        <file src="Plugin.Compass.UWP\bin\Release\Plugin.Compass.dll" target="lib\UAP10\Plugin.Compass.dll" />
+        <file src="Plugin.Compass.UWP\bin\Release\Plugin.Compass.xml" target="lib\UAP10\Plugin.Compass.xml" />
+        <file src="Plugin.Compass.UWP\bin\Release\Plugin.Compass.pdb" target="lib\UAP10\Plugin.Compass.pdb" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\UAP10\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\UAP10\Plugin.Compass.Abstractions.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.pdb" target="lib\UAP10\Plugin.Compass.Abstractions.pdb" />
+
+
+
+        <!--Xamarin.Android-->
+        <file src="Plugin.Compass.Android\bin\Release\Plugin.Compass.dll" target="lib\MonoAndroid10\Plugin.Compass.dll" />
+        <file src="Plugin.Compass.Android\bin\Release\Plugin.Compass.xml" target="lib\MonoAndroid10\Plugin.Compass.xml" />
+        <file src="Plugin.Compass.Android\bin\Release\Plugin.Compass.pdb" target="lib\MonoAndroid10\Plugin.Compass.pdb" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\MonoAndroid10\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\MonoAndroid10\Plugin.Compass.Abstractions.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.pdb" target="lib\MonoAndroid10\Plugin.Compass.Abstractions.pdb" />
+
+        <!--Xamarin.iOS-->
+        <file src="Plugin.Compass.iOS\bin\iPhone\Release\Plugin.Compass.dll" target="lib\MonoTouch10\Plugin.Compass.dll" />
+        <file src="Plugin.Compass.iOS\bin\iPhone\Release\Plugin.Compass.xml" target="lib\MonoTouch10\Plugin.Compass.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\MonoTouch10\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\MonoTouch10\Plugin.Compass.Abstractions.xml" />
+
+        <!--Xamarin.iOSUnified-->
+        <file src="Plugin.Compass.iOSUnified\bin\iPhone\Release\Plugin.Compass.dll" target="lib\Xamarin.iOS10\Plugin.Compass.dll" />
+        <file src="Plugin.Compass.iOSUnified\bin\iPhone\Release\Plugin.Compass.xml" target="lib\Xamarin.iOS10\Plugin.Compass.xml" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.dll" target="lib\Xamarin.iOS10\Plugin.Compass.Abstractions.dll" />
+        <file src="Plugin.Compass.Abstractions\bin\Release\Plugin.Compass.Abstractions.xml" target="lib\Xamarin.iOS10\Plugin.Compass.Abstractions.xml" />
+
+    </files>
+</package>
