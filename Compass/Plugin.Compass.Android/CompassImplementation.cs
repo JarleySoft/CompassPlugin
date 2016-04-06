@@ -138,12 +138,12 @@ namespace Plugin.Compass
             {
                 if (e.Sensor == accelerometer && !lastAccelerometerSet)
                 {
-                    Array.Copy(e.Values.ToArray(), 0, lastAccelerometer, 0, e.Values.Count);
+                    CopyValues (e.Values, lastAccelerometer);
                     lastAccelerometerSet = true;
                 }
                 else if (e.Sensor == magnetometer && !lastMagnetometerSet)
                 {
-                    Array.Copy(e.Values.ToArray(), 0, lastMagnetometer, 0, e.Values.Count);
+                    CopyValues (e.Values, lastMagnetometer);
                     lastMagnetometerSet = true;
                 }
 
@@ -159,6 +159,12 @@ namespace Plugin.Compass
                     lastMagnetometerSet = false;
                     lastAccelerometerSet = false;
                 }
+            }
+        }
+
+        private void CopyValues(System.Collections.Generic.IList<float> source, float[] destination) {
+            for (int i = 0; i < source.Count; ++i) {
+                destination [i] = source [i];
             }
         }
 
