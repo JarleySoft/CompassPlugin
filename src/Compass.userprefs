@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{AD2D2DB4-E781-4CF1-9B62-3AAD264F196D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Plugin.Compass.Abstractions/BaseCompass.cs">
+    <Files>
+      <File FileName="Plugin.Compass.Abstractions/BaseCompass.cs" Line="3" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Plugin.Compass.Android PreferredExecutionTarget="Android.Google_Accelerated_27" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
