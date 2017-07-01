@@ -8,4 +8,7 @@
     <DebugType></DebugType>
     <DocumentationFile>bin\Release\netstandard1.0\Plugin.Compass.xml</DocumentationFile>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin.Compass.Abstractions\Plugin.Compass.Abstractions.csproj" />
+  </ItemGroup>
 </Project>
