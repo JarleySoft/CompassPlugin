@@ -113,7 +113,9 @@
     </Compile>
     <Compile Include="CompassImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="Properties\Plugin.Compass.rd.xml" />
+    <EmbeddedResource Include="Properties\Plugin.Compass.rd.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plugin.Compass.Abstractions\Plugin.Compass.Abstractions.csproj">
