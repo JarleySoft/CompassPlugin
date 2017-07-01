@@ -23,8 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApps", "TestApps", "{68
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompassTest.Android", "CompassTest\CompassTest.Android\CompassTest.Android.csproj", "{511D6571-FF2D-4F9F-B71A-2929AA7DB400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompassTest.iOS", "CompassTest\CompassTest.iOS\CompassTest.iOS.csproj", "{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Compass.UWP", "Plugin.Compass.UWP\Plugin.Compass.UWP.csproj", "{385A3748-B5DF-4F04-98CF-C3F262FB71B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Compass.watchOS", "Plugin.Compass.watchOS\Plugin.Compass.watchOS.csproj", "{922838F5-7FC9-4D73-92E4-84B1AD09A28A}"
@@ -220,39 +218,6 @@ Global
 		{511D6571-FF2D-4F9F-B71A-2929AA7DB400}.Release|x86.Build.0 = Release|Any CPU
 		{511D6571-FF2D-4F9F-B71A-2929AA7DB400}.Release|x86.Deploy.0 = Release|Any CPU
 		{511D6571-FF2D-4F9F-B71A-2929AA7DB400}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|ARM.ActiveCfg = Ad-Hoc|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|x64.ActiveCfg = Ad-Hoc|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Ad-Hoc|x86.ActiveCfg = Ad-Hoc|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|ARM.ActiveCfg = AppStore|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|x64.ActiveCfg = AppStore|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.AppStore|x86.ActiveCfg = AppStore|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|ARM.ActiveCfg = Debug|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|iPhone.Build.0 = Debug|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|x64.ActiveCfg = Debug|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Debug|x86.ActiveCfg = Debug|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|ARM.ActiveCfg = Release|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|iPhone.ActiveCfg = Release|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|iPhone.Build.0 = Release|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|x64.ActiveCfg = Release|iPhoneSimulator
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|x86.ActiveCfg = Release|iPhone
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5}.Release|Any CPU.Build.0 = Release|iPhone
 		{385A3748-B5DF-4F04-98CF-C3F262FB71B1}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{385A3748-B5DF-4F04-98CF-C3F262FB71B1}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{385A3748-B5DF-4F04-98CF-C3F262FB71B1}.Ad-Hoc|ARM.ActiveCfg = Release|ARM
@@ -451,6 +416,5 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{511D6571-FF2D-4F9F-B71A-2929AA7DB400} = {68E161AA-65BA-4568-9BB7-C49E8F4E6AB0}
-		{6AB57AEB-A3AA-4590-AA15-F264F547F4C5} = {68E161AA-65BA-4568-9BB7-C49E8F4E6AB0}
 	EndGlobalSection
 EndGlobal
