@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plugin.Compass.Abstractions\Plugin.Compass.Abstractions.csproj">
-      <Project>{EA18AE26-31B9-4C9C-9073-9CD1D9B5207C}</Project>
+      <Project>{ea18ae26-31b9-4c9c-9073-9cd1d9b5207c}</Project>
       <Name>Plugin.Compass.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
