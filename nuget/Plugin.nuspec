@@ -47,16 +47,16 @@
     </metadata>
     <files>
         <!--Core-->
-        <file src="Plugin.Compass\bin\Release\netstandard1.0\Plugin.Compass.*" target="lib\netstandard1.0" />
+        <file src="src\Plugin.Compass\bin\Release\netstandard1.0\Plugin.Compass.*" target="lib\netstandard1.0" />
 
        
         <!--UWP-->
-        <file src="Plugin.Compass.UWP\bin\Release\Plugin.Compass.*" target="lib\UAP10" />
+        <file src="src\Plugin.Compass.UWP\bin\Release\Plugin.Compass.*" target="lib\UAP10" />
 
         <!--Xamarin.Android-->
-        <file src="Plugin.Compass.Android\bin\Release\Plugin.Compass.*" target="lib\MonoAndroid10" />
+        <file src="src\Plugin.Compass.Android\bin\Release\Plugin.Compass.*" target="lib\MonoAndroid10" />
 
         <!--Xamarin.iOS-->
-        <file src="Plugin.Compass.iOSUnified\bin\iPhone\Release\Plugin.Compass.*" target="lib\Xamarin.iOS10" />
+        <file src="src\Plugin.Compass.iOSUnified\bin\iPhone\Release\Plugin.Compass.*" target="lib\Xamarin.iOS10" />
     </files>
 </package>
