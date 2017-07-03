@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="2.8.1">
+        <id>Plugin.Compass</id>
+        <version>$version$</version>
+        <title>Compass Plugin for Xamarin and Windows</title>
+        <authors>Jarley Software, James Montemagno</authors>
+        <owners>Carl Barton, James Montemagno</owners>
+        <licenseUrl>https://github.com/JarleySoft/Xamarin.Plugins/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/JarleySoft/Xamarin.Plugins</projectUrl>
+        <iconUrl>http://www.jarleysoft.com/images/compass_plugin_icon.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+            Compass Plugin for Xamarin and Windows
+        </description>
+        <summary>Provides a simple, common interface to get Compass Heading with Xamarin.iOS, Xamarin.Android, and Windows.</summary>
+        <tags>xamarin, pcl, xam.pcl, windows phone, winphone, wp8, android, xamarin.forms, ios, compass</tags>
+        <dependencies>
+         <group targetFramework="net">
+         </group>
+         <group targetFramework="win">
+         </group>
+         <group targetFramework="wp">
+         </group>
+         <group targetFramework="wpa">
+         </group>
+         <group targetFramework="netstandard1.0">
+           <dependency id="NETStandard.Library" version="1.6.1" />
+         </group>
+         <group targetFramework="MonoAndroid10">
+         </group>
+         <group targetFramework="Xamarin.iOS10">
+         </group>
+         <group targetFramework="Xamarin.Mac20">
+         </group>
+         <group targetFramework="portable-net45+win+wpa81+wp80">
+         </group>
+         <group targetFramework="uap">
+         </group>
+         <group targetFramework="dotnet">
+         </group>
+         <group targetFramework="xamarintvos">
+         </group>
+         <group targetFramework="xamarinwatchos">
+         </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <!--Core-->
+        <file src="src\Plugin.Compass\bin\Release\netstandard1.0\Plugin.Compass.*" target="lib\netstandard1.0" />
+
+       
+        <!--UWP-->
+        <file src="src\Plugin.Compass.UWP\bin\Release\Plugin.Compass.*" target="lib\UAP10" />
+
+        <!--Xamarin.Android-->
+        <file src="src\Plugin.Compass.Android\bin\Release\Plugin.Compass.*" target="lib\MonoAndroid10" />
+
+        <!--Xamarin.iOS-->
+        <file src="src\Plugin.Compass.iOSUnified\bin\iPhone\Release\Plugin.Compass.*" target="lib\Xamarin.iOS10" />
+    </files>
+</package>
