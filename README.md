@@ -7,7 +7,7 @@ Provides and simple way to access the compass on iOS, Android, and Windows. Retu
 
 **Platform Support**
 
-|Platform|Supported|Version|
+|Platform|Version|
 | ------------------- | :-----------: |
 |Xamarin.iOS|iOS 7+|
 |Xamarin.Android|API 14+|
