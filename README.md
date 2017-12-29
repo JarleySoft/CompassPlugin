@@ -72,7 +72,7 @@ CrossCompass.Current.Start();
 ```
 
 #### Contributors
-* [cbartonnh](https://github.com/JarleySoft)
+* [Carl Barton](https://github.com/JarleySoft)
 * [James Montemagno](https://github.com/jamesmontemagno)
 
 Thanks!
