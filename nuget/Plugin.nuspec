@@ -58,5 +58,8 @@
 
         <!--Xamarin.iOS-->
         <file src="src\Plugin.Compass.iOSUnified\bin\iPhone\Release\Plugin.Compass.*" target="lib\Xamarin.iOS10" />
+
+        <!--Tizen-->
+        <file src="src\Plugin.Compass.Tizen\bin\Release\tizen40\Plugin.Compass.*" target="lib\tizen40" />
     </files>
 </package>
