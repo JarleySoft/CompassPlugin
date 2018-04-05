@@ -12,7 +12,7 @@ namespace Plugin.Compass
         /// <summary>
         /// Gets if the plugin is supported on the current platform.
         /// </summary>
-        public static bool IsSupported => implementation.Value == null ? false : true;
+        public static bool IsSupported => implementation.Value?.IsSupported ?? false;
 
         /// <summary>
         /// Current plugin implementation to use

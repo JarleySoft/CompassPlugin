@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>tizen40</TargetFramework>
+    <AssemblyName>Plugin.Compass</AssemblyName>
+    <RootNamespace>Plugin.Compass</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Tizen.NET" Version="4.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Plugin.Compass\CrossCompass.cs">
+      <Link>CrossCompass.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin.Compass.Abstractions\Plugin.Compass.Abstractions.csproj" />
+  </ItemGroup>
+  
+</Project>
